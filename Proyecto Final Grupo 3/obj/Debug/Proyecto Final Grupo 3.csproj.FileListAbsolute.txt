@@ -1,0 +1,10 @@
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\bin\Debug\Proyecto Final Grupo 3.exe.config
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\bin\Debug\Proyecto Final Grupo 3.exe
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\bin\Debug\Proyecto Final Grupo 3.pdb
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.csproj.AssemblyReference.cache
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto_Final_Grupo_3.Properties.Resources.resources
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.csproj.GenerateResource.cache
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.exe
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.pdb
+C:\Users\Jose\source\repos\Proyecto Final Grupo 3\obj\Debug\Proyecto_Final_Grupo_3.Vistas.LoginView.resources
