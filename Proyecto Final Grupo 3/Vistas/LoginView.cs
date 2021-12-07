@@ -23,5 +23,10 @@ namespace Proyecto_Final_Grupo_3.Vistas
         {
 
         }
+
+        private void LoginView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

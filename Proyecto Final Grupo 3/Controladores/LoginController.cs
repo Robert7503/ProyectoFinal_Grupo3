@@ -23,17 +23,17 @@ namespace Proyecto_Final_Grupo_3.Controladores
 
         private void ValidarUsuario(object serder, EventArgs e)
         {
-            bool Valido = false;
+            bool esValido = false;
             UsuarioDAO userDao = new UsuarioDAO();
 
             Usuario user = new Usuario();
 
             user.Nombre = Vista.NombretextBox.Text;
-            user.Clave = (Vista.ContraseñaTextBox.Text);
+            user.Clave = Vista.ContraseñaTextBox.Text;
 
-            Valido = userDao.ValidarUsuario(user);
+            esValido = userDao.ValidarUsuario(user);
 
-            if (Valido)
+            if (esValido)
             {
                 MessageBox.Show("Nombre Valido");
 

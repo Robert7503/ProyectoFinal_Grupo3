@@ -19,15 +19,16 @@ namespace Proyecto_Final_Grupo_3.Modelos
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append("SELECT 1 FROM Login1 WHERE USUARIOS =@Usuario AND CONTRASENA =@Contraseña;");
+                sql.Append("SELECT usuario,contrasena FROM LOGIN WHERE USUARIOS =@Usuario AND CONTRASENA =@Contrasena;");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                 comando.CommandText = sql.ToString();
                 comando.Parameters.Add("@Usuario", SqlDbType.VarChar, 30).Value = user.Nombre;
-                comando.Parameters.Add("@Contraseña", SqlDbType.VarChar, 30).Value = user.Clave;
+                comando.Parameters.Add("@Contrasena", SqlDbType.VarChar, 30).Value = user.Clave;
                 valido = Convert.ToBoolean(comando.ExecuteScalar());
+                MiConexion.Close();
             }
             catch (Exception)
             {
@@ -41,7 +42,7 @@ namespace Proyecto_Final_Grupo_3.Modelos
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append("SELECT * FROM proyecto ");
+                sql.Append("SELECT * FROM LOGIN ");
                 comando.Connection = MiConexion;
 
                 MiConexion.Open();
