@@ -21,3 +21,4 @@ C:\Users\GLOBAL\Documents\GitHub\ProyectoFinal_Grupo3\Proyecto Final Grupo 3\obj
 C:\Users\GLOBAL\Documents\GitHub\ProyectoFinal_Grupo3\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.exe
 C:\Users\GLOBAL\Documents\GitHub\ProyectoFinal_Grupo3\Proyecto Final Grupo 3\obj\Debug\Proyecto Final Grupo 3.pdb
 C:\Users\GLOBAL\Documents\GitHub\ProyectoFinal_Grupo3\Proyecto Final Grupo 3\obj\Debug\Proyecto_Final_Grupo_3.Vistas.ServiciosFr.resources
+C:\Users\GLOBAL\Documents\GitHub\ProyectoFinal_Grupo3\Proyecto Final Grupo 3\obj\Debug\Proyecto_Final_Grupo_3.Vistas.MenuView.resources

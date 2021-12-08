@@ -26,7 +26,7 @@ namespace Proyecto_Final_Grupo_3.Vistas
             int tiposervicio=0;
             //int NUMERO = 0;
          
-            string detalle = "";
+            //string detalle = "";
             tiposervicio = comboBox1.SelectedIndex;
             SqlCommand comando = new SqlCommand();
             StringBuilder sql = new StringBuilder();
@@ -53,6 +53,7 @@ namespace Proyecto_Final_Grupo_3.Vistas
 
                     comando = new SqlCommand("insert into servicios (Numero_de_Servicio,Tipo_de_Servicios,Detalle_de_Servicios) VALUES ("+comboBox1.SelectedIndex + ",'"+comboBox1.SelectedItem+"','"+textBox1.Text+"')", MiConexion);
                     comando.ExecuteNonQuery();
+                    MiConexion.Close();
                     MessageBox.Show("Datos agregados");
                     break;
 

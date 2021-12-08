@@ -10,6 +10,6 @@ namespace Proyecto_Final_Grupo_3.Modelos
 {
     public class Conexion
     {
-        protected SqlConnection MiConexion = new SqlConnection(ConfigurationManager.ConnectionStrings["proyecto"].ConnectionString);
+        protected SqlConnection MiConexion = new SqlConnection(ConfigurationManager.ConnectionStrings["CooConexion"].ConnectionString);
     }
 }

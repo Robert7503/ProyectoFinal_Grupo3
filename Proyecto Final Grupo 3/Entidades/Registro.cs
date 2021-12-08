@@ -8,7 +8,7 @@ namespace Proyecto_Final_Grupo_3.Entidades
 {
     public class Registro
     {
-        public int IDENTIDAD { get; set; }
+        //public int IDENTIDAD { get; set; }
         public string NOMBRE { get; set; }
         public string APELIDO { get; set; }
         public int CELULAR { get; set; }
@@ -17,9 +17,9 @@ namespace Proyecto_Final_Grupo_3.Entidades
         public int EDAD { get; set; }
         public string SEXO { get; set; }
 
-        public Registro(int identidad, string nombre, string apellido, int celular, string direccion, string correo, int edad, string genero)
+        public Registro(string nombre, string apellido, int celular, string direccion, string correo, int edad, string genero)
         {
-            IDENTIDAD = identidad;
+            //IDENTIDAD = identidad;
             NOMBRE = nombre;
             APELIDO = apellido;
             CELULAR = celular;

@@ -63,6 +63,7 @@ namespace Proyecto_Final_Grupo_3.Vistas
             this.ContraseñaTextBox.PasswordChar = '*';
             this.ContraseñaTextBox.Size = new System.Drawing.Size(144, 20);
             this.ContraseñaTextBox.TabIndex = 9;
+            this.ContraseñaTextBox.Text = "1234";
             // 
             // NombretextBox
             // 
@@ -70,6 +71,7 @@ namespace Proyecto_Final_Grupo_3.Vistas
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(145, 20);
             this.NombretextBox.TabIndex = 8;
+            this.NombretextBox.Text = "GRUPO3";
             // 
             // label2
             // 

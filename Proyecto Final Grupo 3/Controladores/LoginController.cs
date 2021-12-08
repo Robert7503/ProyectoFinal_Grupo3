@@ -14,6 +14,7 @@ namespace Proyecto_Final_Grupo_3.Controladores
     class LoginController
     {
         LoginView Vista;
+        private object vista;
 
         public LoginController(LoginView view)
         {
@@ -36,6 +37,9 @@ namespace Proyecto_Final_Grupo_3.Controladores
             if (esValido)
             {
                 MessageBox.Show("Nombre Valido");
+                MenuView menu = new MenuView();
+                Vista.Hide();
+                menu.Show(); //AQUI LLMAO EL FORMULARIO MENU
 
                 //AQUI ES PARA ENTRAR AL SIGUIENTE FORMULARIO SI EL USUARIO ES CORRECTO
                 //Form1 f2 = new Form1();

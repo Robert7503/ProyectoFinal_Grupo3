@@ -7,14 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Proyecto_Final_Grupo_3.Entidades
-{
-    class Servicios : Conexion 
+{   
+    public class Servicios : Conexion
     {
         SqlCommand comando = new SqlCommand();
+       
+        StringBuilder sql = new StringBuilder();       
 
-        StringBuilder sql = new StringBuilder();
-
-        Sql.Append("SELECT 1 FROM LOGIN WHERE USUARIOS =@Usuario AND CONTRASENA =@Contraseña;")
+       Sql.Append("SELECT 1 FROM LOGIN WHERE USUARIOS =@Usuario AND CONTRASENA =@Contraseña;")
 
 
     }

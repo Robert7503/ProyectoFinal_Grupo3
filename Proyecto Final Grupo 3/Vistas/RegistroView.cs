@@ -16,5 +16,15 @@ namespace Proyecto_Final_Grupo_3.Vistas
         {
             InitializeComponent();
         }
+
+        private void IdentidadTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegistroView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
