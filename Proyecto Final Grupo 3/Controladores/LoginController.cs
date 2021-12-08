@@ -11,11 +11,10 @@ using System.Security.Cryptography;
 
 namespace Proyecto_Final_Grupo_3.Controladores
 {
-    class LoginController
+    public class LoginController
     {
         LoginView Vista;
-        private object vista;
-
+        
         public LoginController(LoginView view)
         {
             Vista = view;
@@ -29,14 +28,15 @@ namespace Proyecto_Final_Grupo_3.Controladores
 
             Usuario user = new Usuario();
 
-            user.Nombre = Vista.NombretextBox.Text;
-            user.Clave = Vista.ContraseñaTextBox.Text;
+            user.Nombre = Vista.txtNombreLOGIN.Text;
+            user.Clave = EncriptarContraseña(Vista.txtClaveLOGIN.Text);
 
             esValido = userDao.ValidarUsuario(user);
 
             if (esValido)
             {
                 MessageBox.Show("Nombre Valido");
+                MessageBox.Show("Acceso correcto");
                 MenuView menu = new MenuView();
                 Vista.Hide();
                 menu.Show(); //AQUI LLMAO EL FORMULARIO MENU
@@ -44,7 +44,7 @@ namespace Proyecto_Final_Grupo_3.Controladores
                 //AQUI ES PARA ENTRAR AL SIGUIENTE FORMULARIO SI EL USUARIO ES CORRECTO
                 //Form1 f2 = new Form1();
                 // f2.ShowDialog();
-                MessageBox.Show("Acceso correcto");
+                
 
             }
             else

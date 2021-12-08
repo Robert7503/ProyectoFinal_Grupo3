@@ -19,7 +19,7 @@ namespace Proyecto_Final_Grupo_3.Modelos
             try
             {
                 StringBuilder sql = new StringBuilder();
-                sql.Append("SELECT 1 FROM LOGIN WHERE USUARIOS =@Usuario AND CONTRASENA =@Contrasena;");
+                sql.Append("SELECT * FROM LOGIN WHERE USUARIOS =@Usuario AND CONTRASENA =@Contrasena;");
 
                 comando.Connection = MiConexion;
                 MiConexion.Open();

@@ -59,7 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\DetallesController.cs" />
+    <Compile Include="Controladores\RegistroController.cs" />
     <Compile Include="Controladores\LoginController.cs" />
     <Compile Include="Entidades\Detalles.cs" />
     <Compile Include="Modelos\Servicios.cs" />

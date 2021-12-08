@@ -28,5 +28,20 @@ namespace Proyecto_Final_Grupo_3.Vistas
         {
 
         }
+
+        private void NombretextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContraseñaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SalirButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

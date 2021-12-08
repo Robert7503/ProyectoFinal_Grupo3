@@ -14,25 +14,72 @@ namespace Proyecto_Final_Grupo_3.Vistas
         {
             InitializeComponent();
         }
-        ExpedientesView VistaUsuarios;
+        ExpedientesView VistaDETALLES;
         ServiciosFr Vistaservicio;
-        RegistroView VistaDetalles;
+        RegistroView VistaUSUARIOS;
         private void MenuView_Load(object sender, EventArgs e)
         {
 
         }
 
         private void ServiciostoolStripButton2_Click(object sender, EventArgs e)
-        {
-            VistaUsuarios = new RegistroView();
-            VistaUsuarios.MdiParent = this;
+        {//registros
+            if (VistaUSUARIOS == null)
+            {
+                VistaUSUARIOS = new RegistroView();
+                VistaUSUARIOS.MdiParent = this;
+                VistaUSUARIOS.FormClosed += Vistaservicio_FormClosed;
+                VistaUSUARIOS.Show();
+            }
+            else
+            {
+                VistaUSUARIOS.Activate();
+            }
+        }
+
+        private void Vistaservicio_FormClosed(object sender, FormClosedEventArgs e)
+        {//registros boton
+            VistaUSUARIOS = null;
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
+        {//BOTON SERVICIO
+            if (Vistaservicio == null)
+            {
+                Vistaservicio = new ServiciosFr();
+                Vistaservicio.MdiParent = this;
+                Vistaservicio.FormClosed += Vistaservicio_FormClosed1; 
+                Vistaservicio.Show();
+            }
+            else
+            {
+                Vistaservicio.Activate();
+            }
+        }
+
+        private void Vistaservicio_FormClosed1(object sender, FormClosedEventArgs e)
+        {//BOTON SERVICIO
+            Vistaservicio = null;
+        }
+
+        private void ExpedientoolStripButton1_Click(object sender, EventArgs e)
         {
-            Vistaservicio = new ServiciosFr();
-            Vistaservicio.MdiParent = this();
-                
+            if (VistaDETALLES == null)
+            {
+                VistaDETALLES = new ExpedientesView();
+                VistaDETALLES.MdiParent = this;
+                VistaDETALLES.FormClosed += VistaDETALLES_FormClosed; ;
+                VistaDETALLES.Show();
+            }
+            else
+            {
+                VistaDETALLES.Activate();
+            }
+        }
+
+        private void VistaDETALLES_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            VistaDETALLES = null;
         }
     }
 }

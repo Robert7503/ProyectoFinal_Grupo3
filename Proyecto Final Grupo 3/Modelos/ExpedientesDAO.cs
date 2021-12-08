@@ -1,6 +1,8 @@
 ﻿using Proyecto_Final_Grupo_3.Entidades;
+using Proyecto_Final_Grupo_3.Vistas;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -12,8 +14,10 @@ namespace Proyecto_Final_Grupo_3.Modelos
     {
         SqlCommand comando = new SqlCommand();
 
-        public bool InsertDetalle(Detalles user)
+        public bool ValidarUsuario(Detalles user)
         {
+            Registro es = new Registro();
+
             try
             {
 
@@ -25,16 +29,16 @@ namespace Proyecto_Final_Grupo_3.Modelos
                 MiConexion.Open();
                 comando.CommandType = System.Data.CommandType.Text;
                  comando.CommandText = sql.ToString();
-                 comando.Parameters.Add("@NumeroRegistro", SqlDbType.Int).Value = Detalles.NumeroRegistro;
-                 comando.Parameters.Add("@FechaAtencion", SqlDbType.datetime).Value = Detalles.FechaRegistro;
-                 comando.Parameters.Add("@FechaConsulta", SqlDbType.datetime).Value = Detalles.FechaConsulta;
-                 comando.Parameters.Add("@IdCliente", SqlDbType.Int).Value = Detalles.IdCliente;
-                 comando.Parameters.Add("@NombreCliente", SqlDbType.Varchar,70).Value = Detalles.NombreCliente;
-                 comando.Parameters.Add("@TipoCaso", SqlDbType.VarChar, 50).Value = Detalles.;
-                 comando.Parameters.Add("@DescripcionCaso", SqlDbType.VarChar, 50).Value = Detalles.TipoTransaccion;
-                 comando.Parameters.Add("@Abogado", SqlDbType.Varchar,50).Value = Detalles.SaldoInicail;
-                 comando.Parameters.Add("@EstadoCaso", SqlDbType.Varchar,30).Value = Detalles.SaldoFinal;
-                 //comando.ExecuteNonQuery();
+                 comando.Parameters.Add("@NumeroRegistro",SqlDbType.Int).Value = user.NumeroRegistro;
+                 comando.Parameters.Add("@FechaAtencion", SqlDbType.DateTime).Value = user.FechaRegistro;
+                 comando.Parameters.Add("@FechaConsulta", SqlDbType.DateTime).Value = user.FechaConsulta;
+                 comando.Parameters.Add("@IdCliente", SqlDbType.Int).Value =es.IDENTIDAD;
+                 comando.Parameters.Add("@NombreCliente", SqlDbType.VarChar,70).Value = es.NOMBRE;
+                 comando.Parameters.Add("@TipoCaso", SqlDbType.VarChar, 50).Value = user.TipoCaso;
+                 comando.Parameters.Add("@DescripcionCaso", SqlDbType.VarChar, 50).Value = user.DescripcionCaso;
+                 comando.Parameters.Add("@Abogado", SqlDbType.VarChar,50).Value = user.AbogadoConsulta;
+                 comando.Parameters.Add("@EstadoCaso", SqlDbType.VarChar,30).Value = user.EstadoCaso;
+                 comando.ExecuteNonQuery();
                 MiConexion.Close();
                 return true;
             }
